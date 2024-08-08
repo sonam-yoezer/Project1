@@ -1,0 +1,108 @@
+.services{
+    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.content{
+    text-decoration: none;
+    text-align: center;
+}
+
+.box1{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+h4{
+    color: #5f636d;
+}
+.box2{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.box3{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.box4{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.box5{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+.box6{
+    border: 1px solid #338FE3;
+    height: 300px;
+    width: 400px;
+    transition: 0.3s;
+}
+
+i{
+    color: #338FE3;
+    padding: 40px;
+    font-size: 40px;
+  
+}
+
+.box{
+    margin-left: 35px;
+}
+
+.box1:hover{
+    background-color: #338FE3;
+    transition: 0.3s;
+}
+.box2:hover{
+    background-color: #338FE3;
+}
+.box3:hover{
+    background-color: #338FE3;
+}
+.box4:hover{
+    background-color: #338FE3;
+}
+.box5:hover{
+    background-color: #338FE3;
+}
+.box6:hover{
+    background-color: #338FE3;
+}
+
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
+  color: #fff;
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover i {
+  color: #fff;
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover h4 {
+  color: #fff;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+

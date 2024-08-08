@@ -1,0 +1,33 @@
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+
+a{
+  position: relative;
+}
+
+a:before{
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #1977cc;
+  transition: width .5s ease-in-out;
+}
+
+a:hover::before{
+  width: 80%;
+}
+
+#logo{
+  font-family: cursive;
+  color: #338FE3;
+  font-size: large;
+}

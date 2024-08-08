@@ -1,0 +1,54 @@
+<br><br><br><br>
+<table class="table ms-3 me-3">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Appointment Date</th>
+        <th scope="col">Department</th>
+        <th scope="col">Doctor</th>
+        
+      </tr>
+
+      @for (item of appointmentList; track $index) {
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.name}}</td>
+        <td scope="col" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.email}}</td>
+        <td scope="col" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.num}}</td>
+        <td scope="col" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.appd}}</td>
+        <td scope="col" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.sdepartment}}</td>
+        <td scope="col" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 "> {{item?.doctor}}</td>
+      
+      
+          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">
+
+  <div class="dropdown">
+    <a class="btn btn-secondary dropdown  bg-white border border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="container rounded-circle">
+        <div class="group-menu">
+         <div class="dot"></div>
+         <div class="dot"></div>
+         <div class="dot"></div>
+        </div>
+      </div>
+    </a>
+  
+    <ul class="dropdown-menu">
+      <div class="frame1" id="frame1"></div>
+      <div class="info" (click)="onEdit(item.id)">Edit<i class="ms-1 fa-regular fa-pen-to-square" style="color: #000000;"></i></div>
+      <div class="info" (click)="onDelete(item.id)">Delete<i class="ms-1 fa-solid fa-trash" style="color: #000000;"></i></div>
+    </ul>
+  </div>        
+                
+        </td> 
+     </tr>
+} 
+
+</thead>
+</table>
+
+
+
+  
